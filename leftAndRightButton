@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  background-color:#3498db;
+  }
+
+/* base style*/
+.leftButton {
+  padding-left:10px;
+  background-color:#fdcb6e;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  line-height:5;
+  width:47%;
+  float:left;
+  display:block;
+  transition: all .3s ease;
+  }
+
+/* rotation of icon */
+div:hover .rotate360 {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+    }
+
+/* semi nudge the left text */
+div:hover #leftText {
+  transition: 0.3s;
+  padding-right:10px;
+  -webkit-transition: all .3s;
+  transition-delay: .1s;
+    }
+
+    /* semi nudge the right text */
+div:hover #rightText {
+  transition: 0.70s;
+  padding-left:10px;
+  -webkit-transition: all .3s;
+  transition-delay: .1s;
+    }
+
+
+/* change the bgcolor, opacity, textcolor hover  */
+.leftButton:hover {
+  background-color:#2980b9;
+  opacity: .85;
+  color:#f1c40f;
+  -webkit-transition: all .3s;
+  transition-delay: .1s;
+  }
+</style>
+
+<div class="leftButton">
+<i class="fa fa-chevron-circle-left rotate360"></i>
+<span id="leftText">Left side</span>
+</div>
+
+<div class="leftButton">
+<span id="rightText">Right side</span>
+<i class="fa fa-chevron-circle-right rotate360"></i>
+</div>
